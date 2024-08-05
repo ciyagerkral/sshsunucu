@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="{{ url_for('process') }}" method="post">
+        <label for="telno">Tel No:</label>
+        <input type="text" id="telno" name="telno" required><br><br>
+        <label for="parola">VF Şifren:</label>
+        <input type="password" id="parola" name="parola" required><br><br>
+        <label for="kod">SMS Kodu:</label>
+        <input type="text" id="kod" name="kod" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
